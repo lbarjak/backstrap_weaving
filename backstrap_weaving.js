@@ -1,4 +1,4 @@
-//with p5.js!
+//with p5.js! Insert to: https://p5js.org/
 var a = 0;
 var b = 0;
 var c = 0;
@@ -28,15 +28,15 @@ function hexagon(x, y, r, g, b) {
 		
 function setup() {
     canvas = createCanvas(600, 300);
-    canvas.parent('myContainer');
+    //canvas.parent('myContainer');
     background(255);
-	fill(128);
-	rect(0, 0, 600, 300);
+    fill(128);
+    rect(0, 0, 600, 300);
 }
 	
 function draw() {
 	
-	var h0 = pattern[0].length;
+    var h0 = pattern[0].length;
     var h = pattern[c].length;
     var t = (pattern[c].charAt(c * (h - 1 - 2 * a) + a));
     if (t === 's') {
@@ -71,7 +71,8 @@ function draw() {
             rect(0, 0, 600, 300);
         }
     }
-    if ((mouseIsPressed || touchIsDown) && mouseX < 600 && mouseY < 300 && mouseY) {
+    //if ((mouseIsPressed || touchIsDown) && mouseX < 600 && mouseY < 300 && mouseY) {
+    if ((mouseIsPressed) && mouseX < 600 && mouseY < 300 && mouseY) {
         fill(128);
         rect(0, 0, 600, 300);
         a = 0;
