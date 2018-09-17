@@ -1,4 +1,4 @@
-//with p5.js! Insert to: https://p5js.org/
+//with p5.js! Insert to: https://editor.p5js.org/
 var a = 0;
 var b = 0;
 var c = 0;
